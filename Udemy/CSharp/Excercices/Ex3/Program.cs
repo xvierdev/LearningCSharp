@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Globalization;
-namespace Exercices{
-    class Program{
-        static void Main (string[] args){
+namespace Exercices
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
             int a, b, c, d, diferenca;
             a = int.Parse(Console.ReadLine());
             b = int.Parse(Console.ReadLine());
