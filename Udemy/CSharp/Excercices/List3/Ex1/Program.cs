@@ -14,19 +14,19 @@ namespace Exercices
             {
                 if (x > 0 && y > 0)
                 {
-                    Console.WriteLine("Q1");
+                    Console.WriteLine("primeiro");
                 }
                 else if (x > 0 & y < 0)
                 {
-                    Console.WriteLine("Q2");
+                    Console.WriteLine("segundo");
                 }
                 else if (x < 0 & y < 0)
                 {
-                    Console.WriteLine("Q3");
+                    Console.WriteLine("terceiro");
                 }
                 else if (x < 0 & y > 0)
                 {
-                    Console.WriteLine("Q4");
+                    Console.WriteLine("quarto");
                 }
                 input = Console.ReadLine().Split(' ');
                 x = double.Parse(input[0]);
