@@ -6,34 +6,32 @@ namespace Exercices
     {
         static void Main(string[] args)
         {
-            int gas = 0, alc = 0, die = 0;
-            int code = int.Parse(Console.ReadLine());
-            while (true)
+            double x, y;
+            string[] input = Console.ReadLine().Split(' ');
+            x = double.Parse(input[0]);
+            y = double.Parse(input[1]);
+            while (x != 0 && y != 0)
             {
-                code = int.Parse(Console.ReadLine());
-                if (code == 1)
+                if (x > 0 && y > 0)
                 {
-                    gas += 1;
+                    Console.WriteLine("primeiro");
                 }
-                else if (code == 2)
+                else if (x > 0 & y < 0)
                 {
-                    alc += 1;
+                    Console.WriteLine("segundo");
                 }
-                else if (code == 3)
+                else if (x < 0 & y < 0)
                 {
-                    die += 1;
+                    Console.WriteLine("terceiro");
                 }
-                else if (code == 4)
+                else if (x < 0 & y > 0)
                 {
-                    break;
+                    Console.WriteLine("quarto");
                 }
+                input = Console.ReadLine().Split(' ');
+                x = double.Parse(input[0]);
+                y = double.Parse(input[1]);
             }
-
-            Console.WriteLine("MUITO OBRIGADO!");
-            Console.WriteLine("Gasolina: {0}", gas);
-            Console.WriteLine("Alcool: {0}", alc);
-            Console.WriteLine("Diesel: {0}", die);
-
         }
     }
 }

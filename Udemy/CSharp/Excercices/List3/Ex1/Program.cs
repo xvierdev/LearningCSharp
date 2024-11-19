@@ -6,32 +6,17 @@ namespace Exercices
     {
         static void Main(string[] args)
         {
-            double x, y;
-            string[] input = Console.ReadLine().Split(' ');
-            x = double.Parse(input[0]);
-            y = double.Parse(input[1]);
-            while (x != 0 && y != 0)
+            const string senha = "2002";
+            string pass = Console.ReadLine();
+            while (pass != senha)
             {
-                if (x > 0 && y > 0)
+                if (pass != senha)
                 {
-                    Console.WriteLine("primeiro");
+                    Console.WriteLine("Senha Invalida");
                 }
-                else if (x > 0 & y < 0)
-                {
-                    Console.WriteLine("segundo");
-                }
-                else if (x < 0 & y < 0)
-                {
-                    Console.WriteLine("terceiro");
-                }
-                else if (x < 0 & y > 0)
-                {
-                    Console.WriteLine("quarto");
-                }
-                input = Console.ReadLine().Split(' ');
-                x = double.Parse(input[0]);
-                y = double.Parse(input[1]);
+                pass = Console.ReadLine();
             }
+            Console.WriteLine("Acesso Permitido");
         }
     }
 }
