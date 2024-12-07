@@ -20,6 +20,7 @@ namespace SchoolManager
             {
                 Console.WriteLine("Escolha uma opção: ");
                 char op = Console.ReadKey().KeyChar;
+                Console.WriteLine();
                 switch (op)
                 {
                     case 'i':

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 namespace SchoolManager
 {
@@ -9,9 +8,7 @@ namespace SchoolManager
 
         public void AddAlunos(string nome, string telefone)
         {
-            Aluno aluno = new Aluno();
-            aluno.Nome = nome;
-            aluno.Telefone = telefone;
+            Aluno aluno = new Aluno(nome, telefone);
             Alunos.Add(aluno);
         }
 
