@@ -8,7 +8,7 @@ namespace SchoolManager
 
         public void AddAlunos(string nome, string telefone)
         {
-            Aluno aluno = new Aluno(nome, telefone);
+            Aluno aluno = new(nome, telefone);
             Alunos.Add(aluno);
         }
 

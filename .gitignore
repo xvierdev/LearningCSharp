@@ -1,3 +1,5 @@
 LearningCSharp.sln
 **/bin
 **/obj
+
+.fake
