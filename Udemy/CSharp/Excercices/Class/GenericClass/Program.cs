@@ -2,8 +2,9 @@
 namespace GenericClass{
     class Program{
         static void Main (string[] args){
-            Generic g = new(1, "sapopema");
-            Console.WriteLine(g.GetName());
+            Product g = new Product {Id = 1, Name = "teste"};
+            Console.WriteLine(g.Name);
+            Console.WriteLine(g.Id);
         }
     }
 }

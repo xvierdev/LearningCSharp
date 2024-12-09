@@ -1,27 +1,33 @@
-namespace GenericClass{
-    class Generic(string name)
+namespace GenericClass
+{
+    class Product
     {
-        private string _name = name;
+        private string _name;
         private int _id;
 
-        public Generic(int id, string name) : this(name){
-            this._id = id;
+        public Product(){
+            
         }
 
-        public void SetName (string name){
-            this._name = name;
+        public Product(int id){
+            _id = id;
         }
 
-        public string GetName(){
-            return _name;
+        public Product(int id, string name) : this(id)
+        {
+            _name = name;
         }
 
-        public void SetId (int id){
-            this._id = id;
+        public string Name
+        {
+            get { return this._name; }
+            set { _name = value; }
         }
 
-        public int GetId(){
-            return this._id;
+        public int Id
+        {
+            get { return _id; }
+            set { _id = value; }
         }
     }
 }
