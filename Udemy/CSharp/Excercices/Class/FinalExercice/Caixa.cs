@@ -9,8 +9,8 @@ namespace FinalExercice{
             Conta = conta;
             Titular = name;
         }
-        public ContaBancaria(int conta, string name, double saldo): this(conta, name){
-            Saldo = saldo;
+        public ContaBancaria(int conta, string name, double depositoInicial): this(conta, name){
+            Deposito(depositoInicial);
         }
 
         public void Deposito (double amount){
