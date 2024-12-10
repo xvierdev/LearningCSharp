@@ -1,12 +1,15 @@
+using System.Globalization;
 namespace FinalExercice{
-    class Caixa{
-        public string Nome { get; set; }
-        public int Conta { get; set; }
-        public double Saldo { get; set; }
+    class ContaBancaria{
+        public int Conta { get; private set; }
+        public string Titular { get; set; }
+        public double Saldo { get; private set; }
 
-        public Caixa(int conta, string name, double saldo){
+        public ContaBancaria(int conta, string name){
             Conta = conta;
-            Nome = name;
+            Titular = name;
+        }
+        public ContaBancaria(int conta, string name, double saldo): this(conta, name){
             Saldo = saldo;
         }
 
@@ -25,7 +28,7 @@ namespace FinalExercice{
         }
 
         public override string ToString(){
-            return $"Conta {Conta}, Titular: {Nome}, Saldo: R$ {Saldo:F2}";
+            return $"Conta {Conta}, Titular: {Titular}, Saldo: $ {Saldo.ToString("F2", CultureInfo.InvariantCulture)}";
         }
     }
 }
