@@ -18,8 +18,8 @@ namespace FinalExercice{
         }
 
         public double Saque (double amount){
-            if (amount <= Saldo){
-                Saldo -= amount;
+            if (amount + 5 <= Saldo){
+                Saldo -= (amount + 5);
                 return amount;
             }
             else{
