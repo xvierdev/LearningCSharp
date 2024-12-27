@@ -5,13 +5,15 @@ namespace ReviewCode
     {
         static void Main(string[] args)
         {
-            Msg msg = new()
+            Msg msg = new(Console.ReadLine())
             {
-                Content = Console.ReadLine(),
-                Author = Console.ReadLine()
+                Content = Console.ReadLine()
             };
+
             bool result = Message(msg);
-            if (result){
+            
+            if (result)
+            {
                 Teste t = new()
                 {
                     Info = 234M,
@@ -29,17 +31,13 @@ namespace ReviewCode
             return true;
         }
 
-        class Msg
+        class Msg(string author)
         {
             public string Content;
-            public string Author{
-                get{
-                    return Author;
-                }
-                private set{
-
-                }
-            }
+            public string Author
+            {
+                get; private set;
+            } = author;
         }
 
         class Teste
