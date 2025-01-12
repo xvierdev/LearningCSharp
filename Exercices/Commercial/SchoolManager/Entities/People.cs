@@ -6,7 +6,7 @@ namespace SchoolManager.Entities
     {
         public string Name { get; set; }
         public string Email { get; set; }
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         public DateTime Birthday { get; set; }
 
         public People()
@@ -14,7 +14,7 @@ namespace SchoolManager.Entities
 
         }
 
-        public People(string name, string email, int phone, DateTime birthday)
+        public People(string name, string email, string phone, DateTime birthday)
         {
             Name = name;
             Email = email;
